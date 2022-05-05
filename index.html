@@ -790,10 +790,21 @@
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="./js/scrollreveal.min.js"></script>
 
         <!--==================== SWIPER JS ====================-->
-        <script src="./js/mixitup.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+              import Swiper from 'swiper';
+          var swiper = new Swiper(".testimonial__card", {
+            scrollbar: {
+              el: ".swiper-slide",
+              hide: true,
+            },
+          });
+        </script>
 
         <!--==================== MIXITUP FILTER ====================-->
         <script src="./js/mixitup.min.js"></script>
